@@ -21,7 +21,7 @@ $parnode = $dom->appendChild($node);
 // Select all the rows in the markers table
 
 $query = "SELECT * FROM markers WHERE 1";
-$result = $db->query($query);
+$result = $conn->query($query);
 echo $query;
 var_dump($result);
 if (!$result) {
@@ -45,7 +45,7 @@ while ($row = $result->fetch_array()){
 
 
 $result->close();
-$db->close();
+$conn->close();
 echo $dom->saveXML();
 
 
