@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 1607084
- * Date: 07/11/2016
- * Time: 15:02
- */
 $conn = new mysqli(
     "eu-cdbr-azure-west-a.cloudapp.net",
     "bd60154681be9d",
