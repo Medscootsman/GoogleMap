@@ -19,6 +19,7 @@ $parnode = $dom->appendChild($node);
 
 $query = "SELECT * FROM markers WHERE 1";
 $result = $db->query($query);
+var_dump($query);
 if (!$result) {
     die('Nothing in result: ');
 }
@@ -37,6 +38,7 @@ while ($row = $result->fetch_array()){
     $newnode->setAttribute("lng", $row['lng']);
     $newnode->setAttribute("type", $row['type']);
 }
+
 
 $result->close();
 $db->close();
