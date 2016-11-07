@@ -22,8 +22,7 @@ $parnode = $dom->appendChild($node);
 
 $query = "SELECT * FROM markers WHERE 1";
 $result = $conn->query($query);
-echo $query;
-var_dump($result);
+
 if (!$result) {
     die('Nothing in result: ');
 }
