@@ -33,6 +33,7 @@
                 zoom: 6,
                 mapTypeId: 'roadmap'
             });
+            DirectionsDisplay.setMap(map);
 
             function calculateAndDisplayRoute(directionsService, directionsDisplay) {
                 directionsService.route({
