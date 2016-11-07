@@ -44,7 +44,7 @@
                     travelMode: 'DRIVING',
                     avoidTolls: false,
                     avoidHighways: true,
-                    unitSystem: 'IMPERIAL'
+                    unitSystem: google.maps.UnitSystem.IMPERIAL
                 }, function(response, status) {
                     if (status === 'OK') {
                         directionsDisplay.setDirections(response);
