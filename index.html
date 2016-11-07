@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>GoogleMaps</title>
     <title>PHP/MySQL & Google Maps Example</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU"
-            type="text/JavaScript"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
+    </script>
 
     <!-- boostrap -->
 
@@ -107,7 +108,7 @@
 
 <div id="map" style="height:600px; width:1980px;"></div>
 
-
+<input type="button" id="chkdsk">
 
 
 </body>
