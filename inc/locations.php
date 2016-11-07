@@ -5,9 +5,7 @@
  * Date: 07/11/2016
  * Time: 15:02
  */
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 
 include "scripts/dbconnect.php";
 
