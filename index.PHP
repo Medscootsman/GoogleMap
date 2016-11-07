@@ -17,10 +17,9 @@
 
     <!-- Custom stylesheet -->
 
-    <link rel="stylesheet" type="text/css" href="css\Infopage\style.css">
-
 </head>
 <body onload="load()">
+
 <?php
 include "inc/locations.php";
 
