@@ -5,13 +5,17 @@
  * Date: 07/11/2016
  * Time: 15:02
  */
+$conn = new mysqli(
+    "eu-cdbr-azure-west-a.cloudapp.net",
+    "bd60154681be9d",
+    "498a748a",
+    "1607084" );
 
-
-include "scripts/dbconnect.php";
-
-
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 // Start XML file, create parent node
-
 $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
